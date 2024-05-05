@@ -12,16 +12,16 @@ The database.py has the connections already figured out on localhost and the por
 4. Run main.py
 
 # Commands inside project directory
-`python -m venv venv` <br />
-`venv\Scripts\activate` <br />
-`pip install psycopg2` <br />
+`python -m venv venv` <br /> <br />
+`venv\Scripts\activate` <br /> <br />
+`pip install psycopg2` <br /> <br />
 `sql -U postgres`
 
 Feel free to switch to pgAdmin 4 here, as I did.
 
 # Commands inside postgres
-`CREATE USER <username> WITH PASSWORD '<password>';` <br />
-`CREATE DATABASE <database_name>;` <br />
+`CREATE USER <username> WITH PASSWORD '<password>';` <br /> <br />
+`CREATE DATABASE <database_name>;` <br /> <br />
 `GRANT ALL PRIVILEGES ON DATABASE <database_name> TO <username>;`
 
 Make sure to match the username, password and database_name to the config inside database.py and to the password you chose for postgres. The database was created in the public schema on my machine.
